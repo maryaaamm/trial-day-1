@@ -10,6 +10,10 @@ app.get('/trial', (req, res) => {
   res.send('turtle')
 })
 
+app.get('/trial/test', (req, res) => {
+  res.send('armadillo')
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
