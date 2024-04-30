@@ -6,4 +6,7 @@ COPY . .
 
 RUN npm install
 
-CMD ["node" "./test.js"]
+EXPOSE 3000
+
+CMD ["node", "./test.js"]
+
