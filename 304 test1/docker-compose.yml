@@ -7,12 +7,19 @@ services:
     command: ["--config=/etc/otel-collector-config.yml"]
     volumes:
       - ./config.yml:/etc/otel-collector-config.yml
+      - /:/hostfs
+    ports: 
+      - 8889:8889
+      - 8888:8888
+      - 4317:4317
 
   prom1:
     image : prom/prometheus
     container_name : prom1 #latest prometheus doesnt require you to have command - i guess sooo
     volumes:
-      - ./config.yml:/etc/prometheus/prometheus.yml
+      - ./configP.yml:/etc/prometheus/prometheus.yml
+    ports: 
+      - 9999:9090
     
 
 

@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@opentelemetry/api": "^1.8.0",
+    "@opentelemetry/exporter-metrics-otlp-grpc": "^0.51.0",
+    "@opentelemetry/resources": "^1.24.0",
+    "@opentelemetry/sdk-metrics": "^1.24.0",
+    "axios": "^1.6.8",
     "express": "^4.19.2"
   }
 }

@@ -18,3 +18,4 @@ services:
     build : .
     ports : 
       - 3002:3000
+
